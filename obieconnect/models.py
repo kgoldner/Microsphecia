@@ -38,26 +38,3 @@ class Course(models.Model):
 # django contrib comments - documentation (batteries included)
 # django contrib auth
 # django registration
-
-	
-"""
-class Category(models.Model):
-	name = models.CharField(max_length=200)
-	slug = models.SlugField(max_length=100)
-	def __unicode__(self):
-		return self.name
-	class Meta:
-		verbose_name_plural = "categories"
-		
-class Task(models.Model):
-	title = models.CharField(max_length=200)
-	slug = models.SlugField(max_length=100)
-	description = models.TextField(max_length=200)
-	due_date = models.DateTimeField('due date')
-	categories = models.ManyToManyField(Category, related_name='tasks')
-	def __unicode__(self):
-		return self.title
-	def is_due_tomorrow(self):
-		return self.due_date.date() == datetime.date.today() + datetime.timedelta(days=1)
-	is_due_tomorrow.short_description = 'Due tomorrow?'
-"""
